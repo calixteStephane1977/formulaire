@@ -1,0 +1,129 @@
+    body{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        background-image: url(./img/Drumful-Treasure.jpeg);
+    }
+    input[type=search] {
+    border: 1px dotted #999;
+    border-radius: 0;
+
+    }
+    .group_1 {
+    width: 50%;
+    }
+    label{
+    margin-right: 17px;
+    }
+    label.marg_1 {
+    margin-right: 34px;
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 538px;
+        color: white;
+        background: #0000007d;
+        border-radius: 10px;
+      animation: opa 1s;
+    }
+    @keyframes opa {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    /* fieldset:hover {
+ transform:scale(1.04) ;
+ z-index: 89;
+ margin: 45px;
+
+    } */
+    .group {
+        display: flex;
+        align-items: center;
+        height: 23px;
+        margin-bottom: 5px;
+    }
+    label.all_label {
+    margin-right: 6px;
+    }
+    legend {
+    text-align: center;
+    }
+    .name_email {
+    width: 50%;
+    }
+    .metier_flavor {
+    width: 40%;
+    }
+    .date_naissance {
+    width: 40%;
+    }
+    input.entrer_nom {
+    width: 162px;
+    }
+
+    input#ice-cream-choice {
+    width: 162px;
+    }
+    /* label::after{
+        content:"";
+        height: 20px;
+        width: 100px;
+        border: 1px solid white;
+    } */
+    label h5 {
+    width: 250px;
+    }
+    .group_flavor {
+    width: 200px;
+    }
+    textarea {
+    width: 75%;
+    }
+    .group_fielset{
+                display: flex;
+                justify-content: space-evenly;
+                position: relative;
+                top: 2%;
+                width: 80%;
+                /* border: 1px solid black; */
+    }
+ p.hidden {
+     width: 0px;
+     overflow: hidden;
+     height: 15px;
+     animation:visibleOrNot 4s ease-in-out forwards;
+ }
+ @keyframes visibleOrNot {
+    0%{
+     width: 0%; 
+    }
+    100%{
+    width: 100%; 
+
+}
+    
+ }
+ .group_blue_red_green {
+     display: flex;
+ }
+ input,textarea,select{
+    border: none;
+    border-radius: 3px;
+    opacity: 0;
+    animation: OPacity 9s 4s forwards;
+ }
+ @keyframes OPacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+ }

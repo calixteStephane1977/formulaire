@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div class="group_fielset">
+        <fieldset>
+            <form action="destination.php" method="post">
+    
+                
+                <br>
+                <div class="group_1">
+                    <div class="group">
+                        <label class="marg_1" for="">
+                            <p class="hidden">Nom</p> 
+                        </label>
+                        <input type="text" name="Nom">
+    
+                    </div>
+                    <div class="group">
+                        <label for="">
+                            <p class="hidden">Prénom</p>
+                            
+                        </label>
+                        <input type="text" name="Prénom">
+    
+                    </div>
+    
+                </div>
+                <br>
+                    <textarea name="commentaire" rows="10"cols="50">
+                        <p class="hidden">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donecsagittis quis metus ornare semper. In vitae lacus ex.
+                                In elementumiaculis malesuada. Maecenas vulputate, 
+                                erat id molestie dictum,diam dolor faucibus nisl, 
+                                in pharetra sapien libero eget risus. Morbivehicula aliquam placerat. 
+                                Suspendisse mollis tempus dictum.Nullam suscipit nec massa eget viverra. 
+                                Etiam feugiat facilisis estnec euismod. Quisque convallis, tortor sed placerat lacinia, 
+                                elit nuncvolutpat arcu, vel consequat velit libero at tortor. 
+                                Suspendisseinterdum lacus non felis bibendum facilisis. In sit amet 
+                        </p>
+                              enim mauris.
+                    </textarea>
+                    <br>
+                    <div class="group_blue_red_green">
+                        <label for="">
+                            <p class="hidden">Bleu</p>
+                        </label>
+                        <input type="checkbox" name="couleur1" value="Bleu" checked>
+                        <label for="">
+                            <p class="hidden">Rouge</p>
+                        </label> 
+                        <input type="checkbox" name="couleur2" value="Rouge">
+                        <label for="">
+                           <p class="hidden">Vert</p> 
+                        </label> 
+                        <input type="checkbox" name="couleur3" value="Vert"> 
+    
+                    </div>
+                    <div class="group_blue_red_green">
+                        <label for="">
+                            <p class="hidden">Bleu</p>
+                        </label>
+                        <input type="radio" name="couleur" value="Bleu">
+                        <label for="">
+                            <p class="hidden">Rouge</p>
+                        </label> 
+                        <input type="radio" name="couleur" value="Rouge"> 
+                        <label for="">
+                           <p class="hidden">Vert</p> 
+                        </label>
+                        <input type="radio" name="couleur" value="Vert" checked> 
+    
+                    </div>
+                    <br>
+                        <br>
+                <select name="couleur">
+                    <option>
+                        <p class="hidden">Bleu</p>
+                    </option>
+                    <option>
+                        <p class="hidden">Rouge</p>
+                    </option>
+                    <option>
+                       <p class="hidden">Vert</p> 
+                    </option>
+                </select>
+                <select name="couleur" >                   
+                    <option value="Bleu">Bleu</option>
+                    <option value="Rouge"selected>Rouge</option>
+                    <option value="Jaune">Jaune</option>
+                    <option value="Blanc">Blanc</option>
+                    <option value="Vert" >Vert</option>
+               </select>
+               <div class="upload">
+                   <input type="file" name="fichier" accept="image/png">
+    
+               </div>
+            <input type="hidden" ...>
+                    
+        </fieldset>
+        <fieldset>
+                    <legend>
+                        <p class="hidden">Coordonnées</p>
+                    </legend>
+                    <div class="name_email">
+                        <div class="group">
+                            <label class="label_marg_1
+                            
+                            " for="nom">
+                               <p class="hidden">Nom:</p> 
+                            </label>
+                            <input type="text" name="nom" id="?">
+                        </div>
+                        <div class="group">
+                            <label class="label_marg_1" for="?">
+                               <p class="hidden ">Email:</p> 
+                            </label>
+                            <input type="email" name="email">
+                            
+                        </div>
+    
+                    </div>
+                    <br>
+                    <div class="date_naissance">
+                            <label for="date">
+                                <p class="hidden">Date de naissance:</p>
+                            </label>
+                            <input type="date" name="ddn" id="date">
+    
+                    </div>
+                    <div class="metier_flavor">
+                        <label for="metiers2">
+                            <h5>
+                                <p class="hidden">Sélectionnez votre métier</p>
+                            </h5>
+                        </label>
+                        <input type="text" name="metiers1" id="metiers2" list="metiers3">
+                    </div>
+                    <div class="group_flavor">
+                        
+                        <label for="ice-cream-choice">
+                       
+                       <p class="hidden">Choose a flavor:</p> 
+                    </p> 
+    
+                           
+                        </label>
+                        <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"> 
+                            <datalist id="ice-cream-flavors">
+                                <option value="Chocolate">
+                                <option value="Coconut">
+                                <option value="Mint">
+                                <option value="Strawberry">
+                                <option value="Vanilla">
+                                                    
+                            </datalist>
+                        </div>
+                                            
+                              <div class="group">
+    
+                                  <input class="entrer_nom" type="text" placeholder="Entrez votre nom" pattern="^[a-z]+$" requiredtitle="Entrez votre nom que des caractères entre a et" >
+                              </div>          
+                                        
+                            <br>
+                        <input type="submit" value="Envoyer">
+                    </div>
+        </fieldset>
+
+    </div>
+</form>
+
+</body>
+
+</html>
